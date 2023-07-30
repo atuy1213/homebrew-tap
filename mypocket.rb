@@ -5,20 +5,20 @@
 class Mypocket < Formula
   desc ""
   homepage ""
-  version "0.3.0"
+  version "0.4.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/atuy1213/mypocket/releases/download/v0.3.0/mypocket_Darwin_x86_64.tar.gz"
-      sha256 "deecc43063627a9bd462531e6bc75fbf28665ae4666ba74edf587912e5ba5e5f"
+      url "https://github.com/atuy1213/mypocket/releases/download/v0.4.3/mypocket_Darwin_x86_64.tar.gz"
+      sha256 "4826b150a6d46f321e1d002bbd94e08a34dc87a9d20e17e137bd256cd249d555"
 
       def install
         bin.install "mypocket"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/atuy1213/mypocket/releases/download/v0.3.0/mypocket_Darwin_arm64.tar.gz"
-      sha256 "c144381092a2be85816becfa43491210fa61f0edba2ceaa7474ed26d6c673b67"
+      url "https://github.com/atuy1213/mypocket/releases/download/v0.4.3/mypocket_Darwin_arm64.tar.gz"
+      sha256 "d74b2a52b69143335c7cebc30c08de11fd2f3d9e8e358e3fece47421651604fd"
 
       def install
         bin.install "mypocket"
@@ -28,16 +28,16 @@ class Mypocket < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/atuy1213/mypocket/releases/download/v0.3.0/mypocket_Linux_arm64.tar.gz"
-      sha256 "a5dda1c05df2f9f9ca2a6da666da462e860e18f0f2c39e35c920d159e1a7f242"
+      url "https://github.com/atuy1213/mypocket/releases/download/v0.4.3/mypocket_Linux_arm64.tar.gz"
+      sha256 "0121100ef55d02b1430bb2280214503f61b03a302930933bbdbe02003f543678"
 
       def install
         bin.install "mypocket"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/atuy1213/mypocket/releases/download/v0.3.0/mypocket_Linux_x86_64.tar.gz"
-      sha256 "73ede538f0e6cfe9bc7d444c372e2addfbb173a095ee13e9f9032936a2ae08e9"
+      url "https://github.com/atuy1213/mypocket/releases/download/v0.4.3/mypocket_Linux_x86_64.tar.gz"
+      sha256 "0cdb50bc9903b319ab2413e261028b3c1bcdf04f198f7275e0b6f9970832a529"
 
       def install
         bin.install "mypocket"
